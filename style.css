@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    font-family: 'Roboto', sans-serif;
+    background-color: lightcoral;
+}
+h1{
+    font-size: 80px;
+    font-weight: 800;
+    position: absolute;
+}
+.text{
+    color: lightgray;
+    text-shadow: 2px -1px 7px #000000;
+}
+.text-liquid{
+    color: lightskyblue;
+    animation: wave 3s ease-in-out infinite;
+}
+@keyframes wave{
+    0%, 100%{
+        clip-path: polygon(0% 100%,
+                   0% 50%, 
+                   22% 69%, 
+                   50% 65%, 
+                   85% 60%, 
+                   100% 59%, 
+                   100% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 100%, 
+                   0% 67%, 
+                   20% 56%, 
+                   40% 46%, 
+                   68% 48%, 
+                   100% 60%, 
+                   100% 100%);
+    }
+}
